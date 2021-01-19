@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banderas | Arturo Tamayo Gonzalez 2152037880</title>
+    <script type="text/javascript" src="banderas.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div id="menu" style="display:block;">
+
+        <div id="continentecontenedor">
+            <p>Selecciona un continente</p>
+            <select id="continente">
+                <option value="america">America</option>
+                <option value="europa">Europa</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+            </select>
+        </div> 
+
+        <div id="cantidadcontenedor">
+            <p>Selecciona el numero de banderas</p>
+            <select id="cantidadBanderas">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+
+        <div id="botonjugarcontenedor">
+            <input id="botonjugar" type="button" value="Jugar" onclick="menu();">
+        </div>
+
+        <div class="" id="opcionesJuegocontenedor">
+            <p>Selecciona una opcion de juego</p>
+            <input id="opcionJuego1" type="radio" name="tipojuego" value="opcion1" checked>Opción 1
+            <br>
+            <input id="opcionJuego2" type="radio" name="tipojuego" value="opcion2">Opción 2
+        </div>
+    </div>
+
+    <div id="juegoopcion1" style="display: none;">
+
+        <h2 id="titulo"></h2>
+        <p id="instrucciones"></p>
+
+        <div id="imagenesjuego1">
+
+        </div>
+        <div id="etiquetasjuego1">
+
+        </div>
+
+        <div id="botonevaluar">
+            <input id="evaluar" type="button" value="Evaluar" disabled="true" onclick="evaluar();">
+        </div>
+    
+    </div>
+    
+
+    <div id="modalopcion1" style="display: none;">
+
+        <p id="aciertosopcion1">Aciertos: 0</p>
+        <p id="erroresopcion1">Errores: 0</p>
+
+        <input type="button" value="Volver a Jugar" onclick="volverajugar();">
+        <br><br>
+        <input type="button" value="Menu" onclick="regresar();">
+
+    </div>
+
+
+    <div id="juegoopcion2">
+
+        <h2 id="titulo2"></h2>
+        <p id="instrucciones2"></p>
+
+
+        <div id="imagenesjuego2">
+
+        </div>
+        <div id="etiquetasjuego2">
+
+        </div>
+
+    </div>
+
+    <div id="modalopcion2" style="display: none;">
+
+        <h4>Intentos</h4>
+        <p id="aciertosopcion2">Acertados: 0</p>
+        <p id="erroresopcion2">Fallidos: 0</p>
+
+        <input type="button" value="Volver a Jugar" onclick="volverajugar();">
+        <br><br>
+        <input type="button" value="Menu" onclick="regresar();">
+
+    </div>
+    
+</body>
+
+
+
+</html>
